@@ -231,6 +231,8 @@ header > p {
     text-align: center;
     font-size: 2rem;
     margin: 0 auto 2vw auto;
+    border: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .formular input[type="submit"] {
