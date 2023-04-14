@@ -1,0 +1,432 @@
+@font-face {
+    font-family: roboto;
+    src: url(./Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(./Roboto-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --main-color: #0b0c17;
+    --space-out: 7vw;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 7rem;
+    font-family: roboto-bold, Arial, Helvetica, sans-serif;
+    margin-bottom: 2vw;
+}
+
+h2 {
+    font-family: roboto-bold, Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+}
+
+h3 {
+    font-family: roboto-bold, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5vw;
+}
+
+/* HEADER */
+
+body > img {
+    width: 5rem;
+    position: fixed;
+    margin: 1.5vw 1.5vw;
+}
+
+header {
+    height: 100vh;
+    background: url(./img/ilustracion1.png) right no-repeat;
+    background-size: contain;
+    padding: 2vw;
+}
+
+nav {
+    margin: 0 5rem;
+}
+
+nav p:nth-of-type(1) {
+   font-size: 2.5rem;
+   font-family: roboto-bold, Arial, Helvetica, sans-serif;
+}
+
+nav p:nth-of-type(2) {
+    font-size: 1.4rem;
+}
+
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 var(--space-out) 0 var(--space-out);
+}
+
+header section article p {
+    display: inline;
+}
+
+header section article img {
+    width: 3rem;
+}
+
+header section > img {
+    width: 45vw;
+    animation: floating 5s infinite;
+}
+
+header > p {
+    margin-left: var(--space-out);
+    color: #ff3571;
+    font-size: 1.4rem;
+    font-family: roboto-bold, Arial, Helvetica, sans-serif;
+    margin-top: 5vw;
+}
+
+/* MAIN */
+
+.pictures {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idea {
+    margin: 0 var(--space-out);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5vw;
+}
+
+.idea h2 {
+    width: 25vw;
+}
+
+.idea h2 img {
+    width: 5rem;
+}
+
+.idea p {
+    width: 40vw;
+    line-height: 2.5vw;
+}
+
+.challenge {
+    margin: 0 var(--space-out) 10vw var(--space-out);
+}
+
+.challenge h2 {
+    width: 40vw;
+    margin-bottom: 5vw;
+}
+
+.challenge article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vw;
+}
+
+.challenge article div {
+    width: 30vw;
+    margin: auto;
+}
+
+.challenge img {
+    width: 3rem;
+}
+
+.challenge .points {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vw;
+}
+
+.ready {
+    margin: 0 var(--space-out);
+}
+
+.ready h2 {
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+.ready > p {
+    width: 50vw;
+    margin: 0 auto 5vw auto;
+    text-align: center;
+}
+
+.ready article {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+    margin-bottom: 10vw;
+}
+
+.ready article img {
+    width: 50vw;
+}
+
+.ready article div p:nth-of-type(1) {
+    font-family: roboto-bold, Arial, Helvetica, sans-serif;
+    color: #dddddd;
+    font-size: 10rem;
+    margin-bottom: 3vw;
+}
+
+.ready article div img {
+    width: 5rem;
+    margin-bottom: 2vw;
+    transition: 0.5s;
+}
+
+.ready article div img:hover {
+    transform: scale(2);
+}
+
+.formular {
+    height: 90vh;
+    text-align: center;
+}
+
+.formular h2, .formular p {
+    margin-bottom: 4vw;
+}
+
+.formular input {
+    display: block;
+}
+
+.formular input[type="email"] {
+    height: 10vh;
+    width: 40vw;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto 2vw auto;
+}
+
+.formular input[type="submit"] {
+    height: 8vh;
+    width: 15vw;
+    color: white;
+    background-color: #F63673;
+    margin: auto;
+    border-radius: 5px;
+    font-family: roboto-bold, Arial, Helvetica, sans-serif;
+    border: 0;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.formular input[type="submit"]:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+
+footer {
+    height: 5vh;
+    margin: 0 var(--space-out);
+    display: flex;
+    gap: 1vw;
+}
+
+footer img {
+    height: 2vw;
+    transition: 0.5s;
+}
+
+footer img:hover {
+    transform: scale(1.5);
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(20px, 20px);
+    }
+
+    50% {
+        transform: translate(10px, 40px);
+    }
+
+    75% {
+        transform: translate(-20px, 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        background-size: cover;
+        height: auto;
+        margin-bottom: 10vw;
+    }
+
+    header section {
+        margin: 5vw 2vw;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+     
+    header section > img {
+        width: 30vw;
+    }
+
+    .pictures {
+        height: auto;
+        margin: 5vw;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .idea{
+        flex-direction: column;
+        margin: 5vw;
+    }
+
+    .idea h2 {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .idea p {
+        width: auto;
+        height: auto;
+    }
+
+    .challenge {
+        margin: 5vw;
+    }
+
+    .challenge h2 {
+        width: auto;
+        text-align: center;
+    }       
+
+    .challenge article div {
+        width: 40vw;
+    }       
+
+    .ready {
+        margin: 5vw;
+    }
+    
+    .ready > p {
+        width: auto;
+    }
+
+    .ready article {
+        height: auto;
+    }
+
+    .formular {
+        height: auto;
+        margin: 5vw;
+    }
+
+    .formular input[type="email"] {
+        margin-bottom: 5vw;
+    }
+
+    footer {
+        margin: 5vw;
+        flex-direction: column;
+    }
+
+    footer p {
+        margin: auto;
+    }
+
+    footer img {
+        width: 10vw;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        text-align: center;
+    }
+    
+    header section {
+        flex-direction: column;
+    }
+
+    .idea {
+        height: auto;
+    }
+    
+    .idea p {
+        line-height: 5vw;
+    }
+
+    .challenge {
+        margin: 10vw 5vw;
+    }
+    
+    .challenge article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .challenge article div {
+        width: 90vw;
+    }
+
+    .ready article {
+        flex-direction: column;
+    }
+
+    .ready article:nth-of-type(2) {
+        flex-direction: column-reverse
+    }
+
+    .ready article:nth-of-type(4) {
+        flex-direction: column-reverse
+    }
+
+    .formular input[type="email"] {
+        width: 80vw;
+    }
+    
+    .formular input[type="submit"] {
+        width: 30vw;
+    }
+}
