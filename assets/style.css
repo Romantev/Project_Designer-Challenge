@@ -94,7 +94,7 @@ header section article img {
 
 header section > img {
     width: 45vw;
-    animation: floating 5s infinite;
+    animation: floating 6s infinite linear;
 }
 
 header > p {
@@ -289,7 +289,7 @@ footer img:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 823px) {
 
     header {
         background-size: cover;
@@ -383,7 +383,7 @@ footer img:hover {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     h1 {
         text-align: center;
     }
